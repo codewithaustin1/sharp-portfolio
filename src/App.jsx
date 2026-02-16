@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -11,7 +11,30 @@ import PrivacyPolicy from './components/Legal/PrivacyPolicy';
 import TermsOfService from './components/Legal/TermsOfService';
 import './App.css';
 
-function App() {
+// Scroll to top/hash component
+function ScrollHandler() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      // Handle hash links
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    } else {
+      // Scroll to top on page change
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
+
+function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -30,26 +53,33 @@ function App() {
   }
 
   return (
+    <>
+      <ScrollHandler />
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <Projects />
+              <Skills />
+              <Contact />
+            </>
+          } />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
     <Router>
-      <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={
-              <>
-                <Hero />
-                <About />
-                <Projects />
-                <Skills />
-                <Contact />
-              </>
-            } />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsOfService />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </Router>
   );
 }

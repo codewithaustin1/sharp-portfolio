@@ -1,27 +1,42 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FiHeart, FiGithub, FiLinkedin, FiTwitter, FiArrowUp } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      navigate(`/#${sectionId}`);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   const quickLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/#about' },
-    { label: 'Projects', href: '/#projects' },
-    { label: 'Skills', href: '/#skills' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Home', section: 'home' },
+    { label: 'About', section: 'about' },
+    { label: 'Projects', section: 'projects' },
+    { label: 'Skills', section: 'skills' },
+    { label: 'Contact', section: 'contact' },
   ];
 
   const socialLinks = [
     { icon: <FiGithub />, href: 'https://github.com/codewithaustin1', label: 'GitHub' },
-    { icon: <FiLinkedin />, href: 'https://linkedin.com/in/austin-makachola', label: 'LinkedIn' },
-    { icon: <FiTwitter />, href: 'https://x.com/AustinMakachola', label: 'Twitter' },
+    { icon: <FiLinkedin />, href: 'https://linkedin.com/in/codewithaustin1', label: 'LinkedIn' },
+    { icon: <FiTwitter />, href: 'https://twitter.com/codewithaustin1', label: 'Twitter' },
   ];
 
   return (
@@ -59,7 +74,12 @@ const Footer = () => {
             <ul className="footer-links">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href}>{link.label}</Link>
+                  <a
+                    href={`/#${link.section}`}
+                    onClick={(e) => handleNavClick(e, link.section)}
+                  >
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -93,7 +113,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            &copy; {currentYear} Nexa Intel. Made with <FiHeart className="heart-icon" /> by Austin Makachola.
+            &copy; {currentYear} SharpDev. Made with <FiHeart className="heart-icon" /> by Austin A.
           </p>
           <div className="footer-bottom-links">
             <Link to="/privacy">Privacy Policy</Link>
