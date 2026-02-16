@@ -1,5 +1,5 @@
 [build]
-  command = "npx react-scripts build"
+  command = "npm ci && node node_modules/react-scripts/bin/react-scripts.js build"
   publish = "build"
 
 [build.environment]
