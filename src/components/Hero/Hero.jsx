@@ -18,9 +18,9 @@ const Hero = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <FiGithub />, href: 'https://github.com', label: 'GitHub' },
-    { icon: <FiLinkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FiTwitter />, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: <FiGithub />, href: 'https://github.com/codewithaustin1', label: 'GitHub' },
+    { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/austin-makachola-820a4a1a2/', label: 'LinkedIn' },
+    { icon: <FiTwitter />, href: 'https://x.com/AustinMakachola', label: 'Twitter' },
   ];
 
   return (
@@ -34,10 +34,7 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-            I’m Austin Makachola — a Full-stack Software Developer based in Nairobi,
-            building production-ready digital ecosystems for creators, entrepreneurs,
-            and small businesses. From frontend architecture to backend systems,
-            I design platforms that are fast, structured, and built to scale.
+          I’m Austin Makachola, a Full-stack Software Developer in Nairobi focused on building precision-driven digital ecosystems. Whether refining frontend architecture or strengthening backend systems, I help entrepreneurs and small businesses translate complex requirements into fast, scalable, production-ready platforms.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">

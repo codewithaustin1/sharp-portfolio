@@ -76,8 +76,7 @@ const Contact = () => {
           <div className="contact-info fade-in">
             <h3>Let's Connect</h3>
             <p>
-              I'm always open to discussing new opportunities, whether it's a 
-              freelance project, full-time role, or just chatting about tech.
+              My inbox is open to discussions about professional collaborations, including remote projects and full-time positions. I also value the chance to engage with the tech community—feel free to reach out for a thoughtful exchange on all things software development.
             </p>
             
             <div className="contact-details">

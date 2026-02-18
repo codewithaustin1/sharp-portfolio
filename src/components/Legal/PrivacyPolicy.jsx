@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
               <FiShield className="intro-icon" />
               <h2>Our Commitment to Privacy</h2>
               <p>
-                At SharpDev, we take your privacy seriously. This Privacy Policy explains how we collect, 
+                At Nexa Intel, we take your privacy seriously. This Privacy Policy explains how we collect, 
                 use, disclose, and safeguard your information when you visit our website. Please read this 
                 privacy policy carefully. If you do not agree with the terms of this privacy policy, 
                 please do not access the site.
@@ -101,9 +101,9 @@ const PrivacyPolicy = () => {
               please contact us at:
             </p>
             <div className="contact-details-legal">
-              <p><strong>Email:</strong> privacy@sharpdev.com</p>
-              <p><strong>Address:</strong> 123 Tech Street, San Francisco, CA 94105</p>
-              <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+              <p><strong>Email:</strong> privacy@austinmakachola.com</p>
+              <p><strong>Address:Nairobi, Kenya</strong> </p>
+              <p><strong>Phone:</strong> +254-740-463-021</p>
             </div>
           </div>
 

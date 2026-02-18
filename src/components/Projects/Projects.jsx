@@ -112,7 +112,7 @@ const Projects = () => {
 
         <div className="projects-cta">
           <p>Want to see more? Check out my GitHub for additional projects and contributions.</p>
-          <a href="https://github.com" className="btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/codewithaustin1" className="btn" target="_blank" rel="noopener noreferrer">
             View All Projects
           </a>
         </div>
