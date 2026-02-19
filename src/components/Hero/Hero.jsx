@@ -34,7 +34,7 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-          I’m Austin Makachola, a Full-stack Software Developer in Nairobi focused on building precision-driven digital ecosystems. Whether refining frontend architecture or strengthening backend systems, I help entrepreneurs and small businesses translate complex requirements into fast, scalable, production-ready platforms.
+          I’m Austin, a Full-stack Software Developer in Nairobi focused on building precision-driven digital ecosystems. Whether refining frontend architecture or strengthening backend systems, I help entrepreneurs and small businesses translate complex requirements into fast, scalable, production-ready platforms.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
             <div className="code-content">
               <pre><code>{`const developer = {
-  name: "Austin Makachola",
+  name: "Austin",
   role: "Full-stack Software Developer",
   focus: [
     "Frontend Architecture",
