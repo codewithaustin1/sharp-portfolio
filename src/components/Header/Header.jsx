@@ -64,7 +64,7 @@ const Header = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <FiCode className="logo-icon" />
-          <span>SharpDev</span>
+          <span>Austin</span>
         </Link>
 
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
