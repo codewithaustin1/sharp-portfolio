@@ -95,7 +95,7 @@ const Skills = () => {
         </div>
 
         <div className="skills-cta">
-          <h3>Always Learning</h3>
+          <h3>Constantly Adapting</h3>
           <p>
             Currently exploring: Rust, WebAssembly, Edge Computing, and Machine Learning
             integration in web applications.
