@@ -35,8 +35,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <FiGithub />, href: 'https://github.com/codewithaustin1', label: 'GitHub' },
-    { icon: <FiLinkedin />, href: 'https://linkedin.com/in/codewithaustin1', label: 'LinkedIn' },
-    { icon: <FiTwitter />, href: 'https://twitter.com/codewithaustin1', label: 'Twitter' },
+    { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/austin-makachola-820a4a1a2', label: 'LinkedIn' },
+    { icon: <FiTwitter />, href: 'https://x.com/AustinMakachola', label: 'Twitter' },
   ];
 
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-logo">SharpDev</h3>
+            <h3 className="footer-logo">Austin</h3>
             <p className="footer-description">
               Building the future one line of code at a time. 
               Passionate about creating digital experiences that make a difference.
@@ -113,7 +113,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            &copy; {currentYear} SharpDev. Made with <FiHeart className="heart-icon" /> by Austin A.
+            &copy; {currentYear} Austin. Made with <FiHeart className="heart-icon" /> by Austin M.
           </p>
           <div className="footer-bottom-links">
             <Link to="/privacy">Privacy Policy</Link>
