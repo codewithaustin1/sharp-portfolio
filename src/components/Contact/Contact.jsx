@@ -76,7 +76,7 @@ const Contact = () => {
           <div className="contact-info fade-in">
             <h3>Let's Connect</h3>
             <p>
-              My inbox is open to discussions about professional collaborations, including remote projects and full-time positions. I also value the chance to engage with the tech community—feel free to reach out.
+            I’m open to discussing professional collaborations, including remote projects and full-time roles, as well as connecting with the tech community. Feel free to reach out.
             </p>
             
             <div className="contact-details">
