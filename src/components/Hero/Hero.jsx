@@ -40,7 +40,7 @@ const Hero = () => {
               Explore My Systems <FiArrowRight />
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Build With Me
+              Ready to Build, Let's Talk 👄 
             </a>
           </div>
           <div className="social-links">
