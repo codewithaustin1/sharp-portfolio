@@ -35,19 +35,34 @@ const About = () => {
           <div className="about-text fade-in">
             <h3>Full-Stack Software Developer & Digital Systems Architect</h3>
             <p>
-              I design and build scalable digital systems that solve real business problems — not just websites.
+              I've spent years watching brilliant ideas die on the launchpad. Not because the vision wasn't there—but because the digital foundation couldn't carry the weight.
             </p>
             <p>
-              Where others focus on surface aesthetics, I engineer platforms that integrate performance, backend logic, user experience, and monetization into one cohesive architecture. The result is fast, reliable, production-ready infrastructure that supports growth from day one.
+              That's where I come in.
             </p>
             <p>
-              My work spans frontend architecture, backend APIs, CMS integrations, authentication systems, analytics, and deployment pipelines. But the objective is never technical complexity for its own sake. It’s operational clarity — systems that automate workflows, reduce friction, and give founders full control over their digital assets.
+              I build the infrastructure that turns "what if" into "what's next." While everyone else is debating button colors and font choices, I'm engineering systems that actually move the needle. Payment flows that convert. User experiences that retain. Backend architecture that scales from your first customer to your millionth—without breaking a sweat.
             </p>
             <p>
               Every platform I build is structured for scalability, optimized for performance, and engineered for long-term sustainability.
             </p>
             <p>
-              My mission is straightforward: transform ambitious ideas into robust, revenue-capable systems that empower creators, entrepreneurs, and small businesses to operate confidently — and competitively — in the digital economy.
+              Here's what that looks like in practice: APIs that talk to each other like old friends. Authentication that keeps bad actors out without slowing real users down. CMS integrations that give you control without the headache. Analytics that don't just collect data—they deliver insights.
+            </p>
+            <p>
+              But here's the part that matters most: I build for people who have something to lose.
+            </p>
+            <p>
+              Founders who've poured everything into their vision. Creators whose reputation rides on every launch. Small businesses finally ready to compete with the giants. They don't need another pretty face for their website. They need infrastructure that works while they're sleeping. Systems that catch problems before they become crises. Architecture that grows faster than they do.
+            </p>
+            <p>
+              The result isn't just another platform. It's operational peace of mind. Automated workflows that used to take hours. Digital assets you actually control, not rent from some template company. A foundation built to last through every pivot, every surge, every curveball the market throws at you.
+            </p>
+            <p>
+              So if you're tired of developers who speak in buzzwords and deliver in disappointment—if you're ready to stop managing chaos and start building momentum—let's talk.
+            </p>
+            <p>
+              I'll handle the machine. You focus on the mission.
             </p>
             
             <div className="stats">
