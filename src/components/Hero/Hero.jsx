@@ -34,7 +34,7 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-          I’m Austin, a Full-stack Software Developer based in Nairobi. I build fast, scalable web platforms that transform complex business requirements into reliable, production-ready systems — from refined frontend architecture to robust backend infrastructure.</p>
+          I’m Austin, a Full-stack Software Developer based in Nairobi. I partner with businesses to turn complex challenges into digital assets. By bridging the gap between refined frontend experiences and robust backend architecture, I build blazing-fast, SEO-friendly platforms that aren't just ready for production—they're ready to scale."</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
               Explore My Systems <FiArrowRight />
