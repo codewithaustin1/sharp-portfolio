@@ -6,6 +6,10 @@
   NODE_VERSION = "18.19.0"
   NPM_VERSION = "9.8.1"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

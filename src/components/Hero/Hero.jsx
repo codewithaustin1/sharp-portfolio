@@ -34,11 +34,10 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-          I’m Austin Makachola, a Full-stack Software Developer in Nairobi focused on building precision-driven digital ecosystems. Whether refining frontend architecture or strengthening backend systems, I help entrepreneurs and small businesses translate complex requirements into fast, scalable, production-ready platforms.
-          </p>
+          I’m Austin, an Applied Data & Software Engineer based in Nairobi. I partner with businesses to turn complex challenges into digital assets. By bridging the gap between refined frontend experiences and robust backend architecture, I build blazing-fast, SEO-friendly platforms that aren't just ready for production—they're ready to scale.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
-              Explore My Systems <FiArrowRight />
+              What Has Been Done <FiArrowRight />
             </a>
             <a href="#contact" className="btn btn-secondary">
               Build With Me
@@ -72,7 +71,7 @@ const Hero = () => {
             </div>
             <div className="code-content">
               <pre><code>{`const developer = {
-  name: "Austin Makachola",
+  name: "Austin M.",
   role: "Full-stack Software Developer",
   focus: [
     "Frontend Architecture",

@@ -35,25 +35,25 @@ const About = () => {
           <div className="about-text fade-in">
             <h3>Full-Stack Software Developer & Digital Systems Architect</h3>
             <p>
-              I build structured, scalable digital systems that solve real business problems.
-              My work goes beyond “designing websites” — I engineer platforms that combine
-              performance, backend logic, user experience, and monetization strategy.
+            I design and build scalable digital systems that solve real business problems — not just websites.
             </p>
             <p>
-              With hands-on experience across frontend architecture, backend APIs,
-              CMS integrations, authentication systems, analytics, and deployment pipelines,
-              I focus on building complete digital ecosystems. Every project I build is
-              optimized for scalability, clarity, and long-term growth.
+              Where others focus on surface aesthetics, I engineer platforms that integrate performance, backend logic, user experience, and monetization into one cohesive architecture. T
+              he result is fast, reliable, production-ready infrastructure that supports growth from day one.
             </p>
             <p>
-              My mission is simple: transform ideas into robust, production-ready
-              systems that empower creators, entrepreneurs, and small businesses
-              to operate confidently in the digital space.
+              My work spans frontend architecture, backend APIs, CMS integrations, authentication systems, analytics, and deployment pipelines. But the objective is never technical complexity for its own sake. It’s operational clarity — systems that automate workflows, reduce friction, and give founders full control over their digital assets.
+            </p>
+            <p>
+              Every platform I build is structured for scalability, optimized for performance, and engineered for long-term sustainability.
+            </p>
+            <p>
+              My mission is straightforward: transform ambitious ideas into robust, revenue-capable systems that empower creators, entrepreneurs, and small businesses to operate confidently — and competitively — in the digital economy.
             </p>
             
             <div className="stats">
               <div className="stat">
-                <span className="stat-number">50+</span>
+                <span className="stat-number">30+</span>
                 <span className="stat-label">Systems & Projects Built</span>
               </div>
               <div className="stat">

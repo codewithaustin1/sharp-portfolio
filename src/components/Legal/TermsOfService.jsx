@@ -12,7 +12,7 @@ const TermsOfService = () => {
     {
       icon: <FiFileText />,
       title: "Acceptance of Terms",
-      content: "By accessing or using SharpDev's portfolio website and services, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access the service."
+      content: "By accessing or using Nexa Intel Ltd's portfolio website and services, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access the service."
     },
     {
       icon: <FiUsers />,
@@ -22,22 +22,22 @@ const TermsOfService = () => {
     {
       icon: <FiCode />,
       title: "Intellectual Property",
-      content: "The service and its original content, features, and functionality are owned by SharpDev and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. This includes all code, designs, text, graphics, logos, and software."
+      content: "The service and its original content, features, and functionality are owned by Nexa Intel Ltd and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. This includes all code, designs, text, graphics, logos, and software."
     },
     {
       icon: <FiShield />,
       title: "Disclaimer of Warranties",
-      content: "The service is provided on an 'AS IS' and 'AS AVAILABLE' basis. SharpDev makes no representations or warranties of any kind, express or implied, regarding the operation or availability of the service, or the information, content, and materials included therein."
+      content: "The service is provided on an 'AS IS' and 'AS AVAILABLE' basis. Nexa Intel Ltd makes no representations or warranties of any kind, express or implied, regarding the operation or availability of the service, or the information, content, and materials included therein."
     },
     {
       icon: <FiAlertCircle />,
       title: "Limitation of Liability",
-      content: "To the fullest extent permitted by law, SharpDev shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service."
+      content: "To the fullest extent permitted by law, Nexa Intel Ltd shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service."
     },
     {
       icon: <FiHelpCircle />,
       title: "Third-Party Links",
-      content: "Our service may contain links to third-party websites or services that are not owned or controlled by SharpDev. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites."
+      content: "Our service may contain links to third-party websites or services that are not owned or controlled by Nexa Intel Ltd. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites."
     },
     {
       icon: <FiCheckCircle />,
@@ -67,9 +67,9 @@ const TermsOfService = () => {
               <FiFileText className="intro-icon" />
               <h2>Terms of Use Agreement</h2>
               <p>
-                Welcome to Nexa Intel. By accessing our website and services, you agree to be bound 
+                Welcome to Nexa Intel Ltd. By accessing our website and services, you agree to be bound 
                 by these Terms of Service and all applicable laws and regulations. These terms 
-                constitute a legally binding agreement between you and SharpDev.
+                constitute a legally binding agreement between you and Nexa Intel Ltd.
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@ const TermsOfService = () => {
             <h3>1. Agreement to Terms</h3>
             <p>
               These Terms of Service constitute a legally binding agreement made between you, 
-              whether personally or on behalf of an entity, and Nexa Intel concerning your access 
+              whether personally or on behalf of an entity, and Nexa Intel Ltd concerning your access 
               to and use of the website. You agree that by accessing the website, you have read, 
               understood, and agree to be bound by all of these Terms of Service.
             </p>
@@ -86,14 +86,14 @@ const TermsOfService = () => {
             <h3>2. Project Inquiries and Services</h3>
             <p>
               When you submit a project inquiry through our contact forms or email, you agree to provide 
-              accurate and complete information. Nexa Intel reserves the right to refuse service to anyone 
+              accurate and complete information. Nexa Intel Ltd reserves the right to refuse service to anyone 
               for any reason at any time. All project proposals, estimates, and agreements will be 
               governed by separate service agreements.
             </p>
 
             <h3>3. Portfolio Content</h3>
             <p>
-              The projects showcased on this portfolio are representative of work completed by SharpDev 
+              The projects showcased on this portfolio are representative of work completed by Nexa Intel Ltd 
               for various clients. These examples are provided for demonstration purposes only and do 
               not imply endorsement or partnership with the companies or organizations whose projects 
               are featured unless explicitly stated.
@@ -113,9 +113,7 @@ const TermsOfService = () => {
           <div className="legal-highlight">
             <h3>Governing Law</h3>
             <p>
-              These Terms shall be governed and construed in accordance with the laws of the State of 
-              California, without regard to its conflict of law provisions. Our failure to enforce any 
-              right or provision of these Terms will not be considered a waiver of those rights.
+              These Terms shall be governed by and construed in accordance with the laws of the Republic of Kenya, without regard to its conflict of law principles. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Kenya.
             </p>
           </div>
 

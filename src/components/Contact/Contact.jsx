@@ -14,25 +14,23 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const contactInfo = [
-{
-  icon: <FiMail />,
-  title: 'Email',
-  value: 'austinmakachola88@gmail.com',
-  link: 'mailto:austinmakachola88@gmail.com',
-},
-
+    {
+      icon: <FiMail />,
+      title: 'Email',
+      value: 'upfrontretaile@gmail.com',
+      link: 'mailto:upfrontretaile@gmail.com',
+    },
     {
       icon: <FiPhone />,
       title: 'Phone',
-      value: '+254 (740) 463-021',
-      link: 'tel:+254740463021',
+      value: '+1 (555) 123-4567',
+      link: 'tel:+15551234567',
     },
-{
-  icon: <FiMapPin />,
-  title: 'Location',
-  value: 'Nairobi, KE',
-},
-
+    {
+      icon: <FiMapPin />,
+      title: 'Location',
+      value: 'Nairobi, Kenya',
+    },
   ];
 
   const handleChange = (e) => {
@@ -47,16 +45,29 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
+      // Send data to Netlify Function
+      const response = await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus(null), 5000);
+      }
     } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(null), 5000);
     } finally {
       setIsSubmitting(false);
     }
@@ -76,7 +87,8 @@ const Contact = () => {
           <div className="contact-info fade-in">
             <h3>Let's Connect</h3>
             <p>
-              My inbox is open to discussions about professional collaborations, including remote projects and full-time positions. I also value the chance to engage with the tech community—feel free to reach out for a thoughtful exchange on all things software development.
+              I'm always open to discussing new opportunities, whether it's a 
+              freelance project, full-time role, or just chatting about tech.
             </p>
             
             <div className="contact-details">
@@ -164,13 +176,13 @@ const Contact = () => {
 
               {submitStatus === 'success' && (
                 <div className="submit-message success">
-                  Message sent successfully! I'll get back to you soon.
+                  ✓ Message sent successfully! I'll get back to you soon.
                 </div>
               )}
 
               {submitStatus === 'error' && (
                 <div className="submit-message error">
-                  Something went wrong. Please try again.
+                  ✗ Something went wrong. Please try again or email me directly.
                 </div>
               )}
             </form>

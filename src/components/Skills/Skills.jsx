@@ -21,9 +21,9 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', level: 95 },
         { name: 'Python', level: 85 },
-        { name: 'PostgreSQL', level: 85 },
+        { name: 'PostgreSQL', level: 90 },
         { name: 'MongoDB', level: 87 },
-        { name: 'GraphQL', level: 82 },
+        { name: 'GraphQL', level: 85 },
       ],
     },
     {
@@ -33,7 +33,7 @@ const Skills = () => {
         { name: 'AWS', level: 85 },
         { name: 'Docker', level: 88 },
         { name: 'Kubernetes', level: 80 },
-        { name: 'CI/CD', level: 90 },
+        { name: 'CI/CD', level: 92 },
         { name: 'Terraform', level: 75 },
       ],
     },
@@ -41,8 +41,8 @@ const Skills = () => {
       icon: <FiTool />,
       title: 'Tools & Others',
       skills: [
-        { name: 'Git', level: 95 },
-        { name: 'Figma', level: 85 },
+        { name: 'Git', level: 98 },
+        { name: 'Figma', level: 95 },
         { name: 'Jest', level: 88 },
         { name: 'Webpack', level: 82 },
         { name: 'Agile/Scrum', level: 90 },
@@ -95,7 +95,7 @@ const Skills = () => {
         </div>
 
         <div className="skills-cta">
-          <h3>Always Learning</h3>
+          <h3>Constantly Adapting</h3>
           <p>
             Currently exploring: Rust, WebAssembly, Edge Computing, and Machine Learning
             integration in web applications.

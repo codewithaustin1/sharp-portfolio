@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
     <div className="legal-page">
       <div className="legal-header">
         <div className="container">
-          <Link to="/" className="back-button">
+          <Link to="/.home" className="back-button">
             <FiArrowLeft /> Back to Home
           </Link>
           <h1 className="legal-title">Privacy Policy</h1>
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
               <FiShield className="intro-icon" />
               <h2>Our Commitment to Privacy</h2>
               <p>
-                At Nexa Intel, we take your privacy seriously. This Privacy Policy explains how we collect, 
+                At Nexa Intel Ltd, we take your privacy seriously. This Privacy Policy explains how we collect, 
                 use, disclose, and safeguard your information when you visit our website. Please read this 
                 privacy policy carefully. If you do not agree with the terms of this privacy policy, 
                 please do not access the site.
