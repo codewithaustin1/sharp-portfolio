@@ -2,22 +2,45 @@
 const { Resend } = require('resend');
 
 exports.handler = async (event) => {
+  // Add CORS headers
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  };
+
+  // Handle preflight OPTIONS request
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers,
+      body: '',
+    };
+  }
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
+      headers,
       body: JSON.stringify({ error: 'Method not allowed' }),
     };
   }
 
   try {
+    // Log for debugging
+    console.log('Function invoked');
+    console.log('API Key exists:', !!process.env.RESEND_API_KEY);
+
     // Parse the incoming form data
     const { name, email, subject, message } = JSON.parse(event.body);
+    console.log('Form data received:', { name, email, subject });
 
     // Validate required fields
     if (!name || !email || !subject || !message) {
       return {
         statusCode: 400,
+        headers,
         body: JSON.stringify({ error: 'All fields are required' }),
       };
     }
@@ -25,10 +48,10 @@ exports.handler = async (event) => {
     // Initialize Resend with API key from environment
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // Send the email
+    // Send the email - USING CORRECT RESEND ACCOUNT EMAIL
     const { data, error } = await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>', // Use your verified domain in production
-      to: ['upfrontretaile@gmail.com'], // Your email where you want to receive messages
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: ['upfrontretaile@gmail.com'], // CORRECTED: Your Resend account email
       subject: `New Portfolio Message: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -58,13 +81,17 @@ exports.handler = async (event) => {
       console.error('Resend error:', error);
       return {
         statusCode: 500,
+        headers,
         body: JSON.stringify({ error: 'Failed to send email' }),
       };
     }
 
+    console.log('Email sent successfully, ID:', data?.id);
+    
     // Success response
     return {
       statusCode: 200,
+      headers,
       body: JSON.stringify({ 
         success: true, 
         message: 'Email sent successfully!',
@@ -76,6 +103,7 @@ exports.handler = async (event) => {
     console.error('Server error:', error);
     return {
       statusCode: 500,
+      headers,
       body: JSON.stringify({ error: 'Internal server error' }),
     };
   }
