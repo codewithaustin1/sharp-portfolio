@@ -19,7 +19,7 @@ const Projects = () => {
       id: 1,
       title: 'E-Commerce Platform',
       description: 'A full-featured e-commerce solution with real-time inventory management, payment integration, and admin dashboard.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      tags: ['React', 'Node.js', 'MongoDB Atlas', 'Stripe'],
       category: 'fullstack',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       github: 'https://github.com',
