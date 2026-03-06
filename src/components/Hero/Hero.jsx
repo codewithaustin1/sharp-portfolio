@@ -37,10 +37,10 @@ const Hero = () => {
           I'm Austin. I build digital assets in Nairobi that make customers trust you and competitors nervous. Whether that's through blinding speed, rock-solid architecture, or experiences that actually convert.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
-              What Has Been Done <FiArrowRight />
+              Projects<FiArrowRight />
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Ready to Build, Let's Talk
+              Work With Me 
             </a>
           </div>
           <div className="social-links">
