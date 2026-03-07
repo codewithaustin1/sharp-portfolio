@@ -72,7 +72,7 @@ const Hero = () => {
             <div className="code-content">
               <pre><code>{`const developer = {
   name: "Austin M.",
-  role: "Applied Data & Software Engineer",
+  role: "Applied Statistician & Software Developer",
   focus: [
     "Frontend Architecture",
     "Backend Systems",
