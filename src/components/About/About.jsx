@@ -35,22 +35,19 @@ const About = () => {
           <div className="about-text fade-in">
             <h3>Full-Stack Software Developer & Digital Systems Architect</h3>
             <p>
-            I design and build scalable digital systems that solve real business problems — not just websites.
+            I build scalable digital systems that go far beyond static pages—platforms engineered to solve real business problems and drive measurable growth.
             </p>
             <p>
-              Where others focus on surface aesthetics, I engineer platforms that integrate performance, backend logic, user experience, and monetization into one cohesive architecture. T
-              he result is fast, reliable, production-ready infrastructure that supports growth from day one.
+              While most settle for surface-level design, I craft integrated architectures that combine performance, backend logic, user experience, and monetization into seamless, production-ready ecosystems. Systems that don’t just look good but work harder, smarter, and faster from day one.
             </p>
             <p>
-              My work spans frontend architecture, backend APIs, CMS integrations, authentication systems, analytics, and deployment pipelines. But the objective is never technical complexity for its own sake. It’s operational clarity — systems that automate workflows, reduce friction, and give founders full control over their digital assets.
+            My expertise covers frontend frameworks, backend APIs, CMS integrations, authentication, analytics, and automated deployment pipelines. But complexity for complexity’s sake is not the goal. It’s about delivering operational clarity—automating workflows, removing friction, and giving founders full control over their digital assets.
             </p>
             <p>
-              Every platform I build is structured for scalability, optimized for performance, and engineered for long-term sustainability.
+            My mission? To turn ambitious ideas into robust, revenue-capable digital systems that empower creators, entrepreneurs, and small businesses to confidently compete and thrive in the digital economy of tomorrow.
             </p>
-            <p>
-              My mission is straightforward: transform ambitious ideas into robust, revenue-capable systems that empower creators, entrepreneurs, and small businesses to operate confidently — and competitively — in the digital economy.
-            </p>
-            
+          
+    
             <div className="stats">
               <div className="stat">
                 <span className="stat-number">30+</span>
