@@ -87,8 +87,7 @@ const Contact = () => {
           <div className="contact-info fade-in">
             <h3>Let's Connect</h3>
             <p>
-              I'm always open to discussing new opportunities, whether it's a 
-              freelance project, full-time role, or just chatting about tech.
+              I'm currently accepting new opportunities — whether that means leading a full-scale product redesign, contributing to a growing tech team, or exploring how my approach could support your next project. Let's connect.
             </p>
             
             <div className="contact-details">
