@@ -34,7 +34,7 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-          I’m Austin M., and I specialize in helping businesses of all sizes build digital assets that attract customers and outshine competitors. Whether through lightning-fast performance, robust architecture, or user experiences designed to convert, I deliver solutions that make felt difference.</p>
+          I’m Austin M., and I specialize in helping businesses of all sizes build digital assets that keep customers and outshine competitors. Whether through lightning-fast performance, robust architecture, or user experiences designed to convert, I deliver solutions that make felt difference.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
               Projects<FiArrowRight />
