@@ -54,7 +54,7 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <div className="skills-header">
-          <h2 className="section-title">Technical Skills</h2>
+          <h2 className="section-title">Expertise </h2>
           <p className="section-subtitle">
             Continuously learning and adapting to new technologies to build better solutions.
           </p>
