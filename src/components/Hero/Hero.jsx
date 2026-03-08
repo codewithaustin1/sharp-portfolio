@@ -34,7 +34,7 @@ const Hero = () => {
             Digital Systems for Growth
           </h1>
           <p className="hero-subtitle">
-          I’m Austin M. My work involves collaborating with organizations and businesses of all sizes to design experiences that retains customers and the competition at bay. Whether through optimised performance, robust architecture, or user experiences designed to convert, the solutions offered make tangible difference.</p>
+           I’m Austin M. I help businesses stop losing customers to the blur of indifference. In a world where every brand is fighting for a split second of attention, I build the digital experiences that make people stay—not through tricks, but through performance that respects their time and design that speaks to their needs. My work is the difference between a user who visits and a user who belongs.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
               Projects<FiArrowRight />
