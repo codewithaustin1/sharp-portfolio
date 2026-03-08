@@ -40,7 +40,7 @@ const Hero = () => {
               Projects<FiArrowRight />
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Work With Me 
+              Hire Me 
             </a>
           </div>
           <div className="social-links">
