@@ -37,10 +37,10 @@ const Hero = () => {
            I’m Austin M. I help businesses stop losing customers to the blur of indifference. In a world where every brand is fighting for a split second of attention, I build the digital experiences that make people stay—not through tricks, but through performance that respects their time and design that speaks to their needs. My work is the difference between a user who visits and a user who belongs.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn">
-              Projects<FiArrowRight />
+              View Case Studies<FiArrowRight />
             </a>
             <a href="#contact" className="btn btn-secondary">
-              Hire Me 
+              Book a Discovery Call
             </a>
           </div>
           <div className="social-links">
