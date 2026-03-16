@@ -28,25 +28,21 @@ const Hero = () => {
       <div className="particles"></div>
       <div className="container">
         <div className="hero-content fade-in">
-          <h1 class="hero-title">
-  <span class="gradient-text">Scalable Digital Systems</span><br />
-  <span class="subhead">Built for Growth, Engineered for Retention</span>
-</h1>
-
-<p class="hero-subtitle">
-  In a world where attention is the scarcest resource, your digital infrastructure must do more than function—it must perform. I partner with founders and executives to architect <strong>custom software solutions</strong> that eliminate friction, accelerate load times, and transform casual visitors into loyal advocates.
-</p>
-
-<ul class="hero-benefits">
-  <li>⚡ <strong>Speed that converts:</strong> Sub-second response times that reduce bounce rates by up to 40%.</li>
-  <li>🎯 <strong>Design that retains:</strong> Intuitive interfaces that guide users from "hello" to "hire."</li>
-  <li>📈 <strong>Scale without sacrifice:</strong> Systems that flex as your revenue grows.</li>
-</ul>
-
-<div class="hero-buttons">
-  <a href="#projects" class="btn btn-primary">View Case Studies →</a>
-  <a href="#contact" class="btn btn-secondary">Book a Discovery Call</a>
-</div>
+          <h1 className="hero-title">
+            <span className="gradient-text">Engineering Scalable</span>
+            <br />
+            Digital Systems for Growth
+          </h1>
+          <p className="hero-subtitle">
+           I’m Austin M. I help businesses stop losing customers to the blur of indifference. In a world where every brand is fighting for a split second of attention, I build the digital experiences that make people stay—not through tricks, but through performance that respects their time and design that speaks to their needs. My work is the difference between a user who visits and a user who belongs.</p>
+          <div className="hero-buttons">
+            <a href="#projects" className="btn">
+              Projects<FiArrowRight />
+            </a>
+            <a href="#contact" className="btn btn-secondary">
+              Hire Me 
+            </a>
+          </div>
           <div className="social-links">
             {socialLinks.map((link) => (
               <a
