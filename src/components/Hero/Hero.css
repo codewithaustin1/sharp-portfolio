@@ -65,6 +65,16 @@
   margin-bottom: 20px;
 }
 
+/* Subhead Styling - New */
+.hero-title .subhead {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray-light);
+  margin-top: 0.75rem;
+  line-height: 1.3;
+}
+
 .gradient-text {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
@@ -79,6 +89,32 @@
   margin-bottom: 40px;
 }
 
+/* Benefits List Styling - New */
+.hero-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.hero-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  color: var(--gray-light);
+  line-height: 1.5;
+}
+
+.hero-benefits li:last-child {
+  margin-bottom: 0;
+}
+
+.hero-benefits li strong {
+  color: white;
+  font-weight: 600;
+}
+
 /* Buttons */
 .hero-buttons {
   display: flex;
@@ -90,6 +126,37 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+/* Button Variants - Updated */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(100, 108, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(100, 108, 255, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Social Links */
@@ -210,11 +277,25 @@
   .social-links {
     justify-content: center;
   }
+  
+  /* New: Center benefits list on tablet */
+  .hero-benefits li {
+    justify-content: center;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
+  }
+  
+  /* New: Responsive subhead */
+  .hero-title .subhead {
+    font-size: 1.4rem;
   }
 
   .hero-subtitle {
@@ -228,5 +309,30 @@
 
   .hero-buttons .btn {
     justify-content: center;
+    width: 100%;
+  }
+  
+  /* New: Benefits list mobile adjustments */
+  .hero-benefits {
+    margin-bottom: 30px;
+  }
+  
+  .hero-benefits li {
+    font-size: 1rem;
+    gap: 10px;
+    margin-bottom: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  /* New: Small mobile adjustments */
+  .hero-benefits li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 24px;
+  }
+     }
